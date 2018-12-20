@@ -1,0 +1,13 @@
+vim/bundle/*
+!vim/bundle/Vundle.vim
+Slack
+dconf
+evolution
+gnome-*
+monitors*
+nautilus
+pulse
+ibus
+user-dirs*
+gtk-*
+goa-*

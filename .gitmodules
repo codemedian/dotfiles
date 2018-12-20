@@ -1,0 +1,9 @@
+[submodule "tmux/tpm"]
+	path = tmux/tpm
+    url = https://github.com/tmux-plugins/tpm
+    branch = master
+
+[submodule "vim/bundle/Vundle.vim"]
+    path = vim/bundle/Vundle.vim
+    url = https://github.com/gmarik/Vundle.vim.git
+    branch = master
