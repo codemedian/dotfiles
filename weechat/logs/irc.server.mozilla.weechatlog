@@ -1,0 +1,533 @@
+2018-12-20 14:59:44	--	irc: connecting to server irc.mozilla.com/6697 (SSL)...
+2018-12-20 14:59:54	=!=	irc: address "irc.mozilla.com" not found
+2018-12-20 14:59:54	=!=	irc: error: Name or service not known
+2018-12-20 14:59:54	--	irc: reconnecting to server in 10 seconds
+2018-12-20 15:00:04	--	irc: reconnecting to server...
+2018-12-20 15:00:04	--	irc: connecting to server irc.mozilla.com/6697 (SSL)...
+2018-12-20 15:00:14	=!=	irc: address "irc.mozilla.com" not found
+2018-12-20 15:00:14	=!=	irc: error: Name or service not known
+2018-12-20 15:00:14	--	irc: reconnecting to server in 20 seconds
+2018-12-20 15:00:20	--	irc: connecting to server "irc.mozilla.org/6697 (SSL)...
+2018-12-20 15:00:29	--	irc: disconnected from server
+2018-12-20 15:00:32	--	irc: connecting to server "irc.mozilla.org/6697 (SSL)...
+2018-12-20 15:00:42	=!=	irc: address ""irc.mozilla.org" not found
+2018-12-20 15:00:42	=!=	irc: error: Name or service not known
+2018-12-20 15:00:42	--	irc: reconnecting to server in 10 seconds
+2018-12-20 15:00:52	--	irc: reconnecting to server...
+2018-12-20 15:00:52	--	irc: connecting to server "irc.mozilla.org/6697 (SSL)...
+2018-12-20 15:01:02	=!=	irc: address ""irc.mozilla.org" not found
+2018-12-20 15:01:02	=!=	irc: error: Name or service not known
+2018-12-20 15:01:02	--	irc: reconnecting to server in 20 seconds
+2018-12-20 15:01:07	--	irc: connecting to server "irc.mozilla.org/6667 (SSL)...
+2018-12-20 15:01:19	--	irc: connecting to server "irc.mozilla.org/6667 (SSL)...
+2018-12-20 15:01:29	=!=	irc: address ""irc.mozilla.org" not found
+2018-12-20 15:01:29	=!=	irc: error: Name or service not known
+2018-12-20 15:01:29	--	irc: reconnecting to server in 10 seconds
+2018-12-20 15:01:39	--	irc: reconnecting to server...
+2018-12-20 15:01:39	--	irc: connecting to server "irc.mozilla.org/6667 (SSL)...
+2018-12-20 15:01:49	=!=	irc: address ""irc.mozilla.org" not found
+2018-12-20 15:01:49	=!=	irc: error: Name or service not known
+2018-12-20 15:01:49	--	irc: reconnecting to server in 20 seconds
+2018-12-20 15:01:53		irc: auto-reconnection is cancelled
+2018-12-20 15:01:53	--	irc: disconnected from server
+2018-12-20 15:01:56	--	irc: connecting to server irc.mozilla.org/6697 (SSL)...
+2018-12-20 15:01:56	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-12-20 15:01:56	--	gnutls: receiving 2 certificates
+2018-12-20 15:01:56	--	 - certificate[1] info:
+2018-12-20 15:01:56	--	   - subject `CN=irc.mozilla.org,OU=WebOps,O=Mozilla Corporation,L=Mountain View,ST=California,C=US', issuer `CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US', serial 0x05a9bfd42c5c6a6ca4a7c435c674b23c, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-22 00:00:00 UTC', expires `2019-08-27 12:00:00 UTC', pin-sha256="2ME/a17rVPZtJVvATsfnkHfq3HUZK/jOHKx69SMaWWc="
+2018-12-20 15:01:56	--	 - certificate[2] info:
+2018-12-20 15:01:56	--	   - subject `CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US', issuer `CN=DigiCert Global Root CA,OU=www.digicert.com,O=DigiCert Inc,C=US', serial 0x01fda3eb6eca75c888438b724bcfbc91, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-03-08 12:00:00 UTC', expires `2023-03-08 12:00:00 UTC', pin-sha256="5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w="
+2018-12-20 15:01:56	--	gnutls: peer's certificate is trusted
+2018-12-20 15:01:57	--	irc: connected to irc.mozilla.org/6697 (63.245.208.110)
+2018-12-20 15:01:57	--	collins.mozilla.org: *** Looking up your hostname...
+2018-12-20 15:01:57	--	collins.mozilla.org: *** Could not resolve your hostname: Domain name not found; using your IP address (193.81.202.249) instead.
+2018-12-20 15:01:58	--	collins.mozilla.org: Welcome to Mozilla!
+2018-12-20 15:01:58	--	Welcome to the Mozilla IRC Network deadc0de!deadc0de@193.81.202.249
+2018-12-20 15:01:58	--	MSG(nickserv): identify ***********
+2018-12-20 15:01:58	--	Your host is collins.mozilla.org, running version InspIRCd-2.0
+2018-12-20 15:01:58	--	This server was created 22:24:50 Aug 20 2018
+2018-12-20 15:01:58	--	collins.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFJKLMNOQRSTYZabcefghijklmnopqrstuvz FJLYZabefghjkloqv
+2018-12-20 15:01:58	--	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FJLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2018-12-20 15:01:58	--	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2018-12-20 15:01:58	--	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2018-12-20 15:01:58	--	381ACY8QU :your unique ID
+2018-12-20 15:01:58	--	collins.mozilla.org message of the day
+2018-12-20 15:01:58	--	-                               _____
+2018-12-20 15:01:58	--	-                   _________  / / (_)___  _____
+2018-12-20 15:01:58	--	-                  / ___/ __ \/ / / / __ \/ ___/
+2018-12-20 15:01:58	--	-                 / /__/ /_/ / / / / / / (__  )
+2018-12-20 15:01:58	--	-                 \___/\____/_/_/_/_/ /_/____/
+2018-12-20 15:01:58	--	-
+2018-12-20 15:01:58	--	-
+2018-12-20 15:01:58	--	-
+2018-12-20 15:01:58	--	-                  M O Z I L L A   D O T   O R G
+2018-12-20 15:01:58	--	-                    https://www.mozilla.org/
+2018-12-20 15:01:58	--	-
+2018-12-20 15:01:58	--	- =================================================================
+2018-12-20 15:01:58	--	-  This server is for use by Mozilla developers, testers, and
+2018-12-20 15:01:58	--	-  users. If you are not one, please find another server.
+2018-12-20 15:01:58	--	-
+2018-12-20 15:01:58	--	-  NOTICE: Your IP address will be portscanned by our open
+2018-12-20 15:01:58	--	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2018-12-20 15:01:58	--	-
+2018-12-20 15:01:58	--	- =================================================================
+2018-12-20 15:01:58	--	-  Project information:
+2018-12-20 15:01:58	--	-   Firefox                https://support.mozilla.org/
+2018-12-20 15:01:58	--	-   Mobile                 https://support.mozilla.org/mobile
+2018-12-20 15:01:58	--	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2018-12-20 15:01:58	--	-
+2018-12-20 15:01:58	--	-  Help for new contributors:
+2018-12-20 15:01:58	--	-   https://developer.mozilla.org/Introduction
+2018-12-20 15:01:58	--	-
+2018-12-20 15:01:58	--	- =================================================================
+2018-12-20 15:01:58	--	-  Ports:
+2018-12-20 15:01:58	--	-   Non-SSL: 6665 - 6669
+2018-12-20 15:01:58	--	-       SSL: 6697, 8443
+2018-12-20 15:01:58	--	- =================================================================
+2018-12-20 15:01:58	--	-
+2018-12-20 15:01:58	--	-  For a list of other helpful channels please visit
+2018-12-20 15:01:58	--	-  https://wiki.mozilla.org/IRC or use the /list command.
+2018-12-20 15:01:58	--	-  Additional help with IRC at http://www.irchelp.org/
+2018-12-20 15:01:58	--	-
+2018-12-20 15:01:58	--	End of message of the day.
+2018-12-20 15:01:58	--	There are 6545 users and 660 invisible on 3 servers
+2018-12-20 15:01:58	--	8 :operator(s) online
+2018-12-20 15:01:58	--	6 :unknown connections
+2018-12-20 15:01:58	--	1986 :channels formed
+2018-12-20 15:01:58	--	I have 7196 clients and 2 servers
+2018-12-20 15:01:58	--	Current Local Users: 7196  Max: 7276
+2018-12-20 15:01:58	--	Current Global Users: 7205  Max: 7285
+2018-12-20 15:01:58	--	moz-ir3.20i.81.193.IP :is now your displayed host
+2018-12-20 15:01:58	--	User mode [+x] by deadc0de
+2018-12-20 15:01:58	--	collins.mozilla.org: *** You are connected using SSL cipher "ECDHE-RSA-AES-256-GCM-AEAD"
+2018-12-20 15:01:58	--	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2018-12-20 15:01:58	--	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2018-12-20 15:01:58	--	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2018-12-20 15:01:58	--	NickServ (services@ircservices.mozilla.org): Password accepted - you are now recognized.
+2018-12-20 15:01:58	--	You are now logged in as deadc0de (deadc0de!deadc0de@moz-ir3.20i.81.193.IP)
+2018-12-20 15:01:58	--	User mode [+rR] by NickServ
+2018-12-20 15:02:04	--	irc: connecting to server irc.mozilla.org/6697 (SSL)...
+2018-12-20 15:02:04	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-12-20 15:02:04	--	gnutls: receiving 2 certificates
+2018-12-20 15:02:04	--	 - certificate[1] info:
+2018-12-20 15:02:04	--	   - subject `CN=irc.mozilla.org,OU=WebOps,O=Mozilla Corporation,L=Mountain View,ST=California,C=US', issuer `CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US', serial 0x05a9bfd42c5c6a6ca4a7c435c674b23c, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-22 00:00:00 UTC', expires `2019-08-27 12:00:00 UTC', pin-sha256="2ME/a17rVPZtJVvATsfnkHfq3HUZK/jOHKx69SMaWWc="
+2018-12-20 15:02:04	--	 - certificate[2] info:
+2018-12-20 15:02:04	--	   - subject `CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US', issuer `CN=DigiCert Global Root CA,OU=www.digicert.com,O=DigiCert Inc,C=US', serial 0x01fda3eb6eca75c888438b724bcfbc91, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-03-08 12:00:00 UTC', expires `2023-03-08 12:00:00 UTC', pin-sha256="5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w="
+2018-12-20 15:02:04	--	gnutls: peer's certificate is trusted
+2018-12-20 15:02:05	--	irc: connected to irc.mozilla.org/6697 (63.245.208.110)
+2018-12-20 15:02:05	--	collins.mozilla.org: *** Looking up your hostname...
+2018-12-20 15:02:05	--	collins.mozilla.org: *** Could not resolve your hostname: Domain name not found; using your IP address (193.81.202.249) instead.
+2018-12-20 15:02:06	--	collins.mozilla.org: Welcome to Mozilla!
+2018-12-20 15:02:06	--	Welcome to the Mozilla IRC Network deadc0de!deadc0de@193.81.202.249
+2018-12-20 15:02:06	--	MSG(nickserv): identify ***********
+2018-12-20 15:02:06	--	Your host is collins.mozilla.org, running version InspIRCd-2.0
+2018-12-20 15:02:06	--	This server was created 22:24:50 Aug 20 2018
+2018-12-20 15:02:06	--	collins.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFJKLMNOQRSTYZabcefghijklmnopqrstuvz FJLYZabefghjkloqv
+2018-12-20 15:02:06	--	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FJLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2018-12-20 15:02:06	--	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2018-12-20 15:02:06	--	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2018-12-20 15:02:06	--	381ACY8QY :your unique ID
+2018-12-20 15:02:06	--	collins.mozilla.org message of the day
+2018-12-20 15:02:06	--	-                               _____
+2018-12-20 15:02:06	--	-                   _________  / / (_)___  _____
+2018-12-20 15:02:06	--	-                  / ___/ __ \/ / / / __ \/ ___/
+2018-12-20 15:02:06	--	-                 / /__/ /_/ / / / / / / (__  )
+2018-12-20 15:02:06	--	-                 \___/\____/_/_/_/_/ /_/____/
+2018-12-20 15:02:06	--	-
+2018-12-20 15:02:06	--	-
+2018-12-20 15:02:06	--	-
+2018-12-20 15:02:06	--	-                  M O Z I L L A   D O T   O R G
+2018-12-20 15:02:06	--	-                    https://www.mozilla.org/
+2018-12-20 15:02:06	--	-
+2018-12-20 15:02:06	--	- =================================================================
+2018-12-20 15:02:06	--	-  This server is for use by Mozilla developers, testers, and
+2018-12-20 15:02:06	--	-  users. If you are not one, please find another server.
+2018-12-20 15:02:06	--	-
+2018-12-20 15:02:06	--	-  NOTICE: Your IP address will be portscanned by our open
+2018-12-20 15:02:06	--	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2018-12-20 15:02:06	--	-
+2018-12-20 15:02:06	--	- =================================================================
+2018-12-20 15:02:06	--	-  Project information:
+2018-12-20 15:02:06	--	-   Firefox                https://support.mozilla.org/
+2018-12-20 15:02:06	--	-   Mobile                 https://support.mozilla.org/mobile
+2018-12-20 15:02:06	--	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2018-12-20 15:02:06	--	-
+2018-12-20 15:02:06	--	-  Help for new contributors:
+2018-12-20 15:02:06	--	-   https://developer.mozilla.org/Introduction
+2018-12-20 15:02:06	--	-
+2018-12-20 15:02:06	--	- =================================================================
+2018-12-20 15:02:06	--	-  Ports:
+2018-12-20 15:02:06	--	-   Non-SSL: 6665 - 6669
+2018-12-20 15:02:06	--	-       SSL: 6697, 8443
+2018-12-20 15:02:06	--	- =================================================================
+2018-12-20 15:02:06	--	-
+2018-12-20 15:02:06	--	-  For a list of other helpful channels please visit
+2018-12-20 15:02:06	--	-  https://wiki.mozilla.org/IRC or use the /list command.
+2018-12-20 15:02:06	--	-  Additional help with IRC at http://www.irchelp.org/
+2018-12-20 15:02:06	--	-
+2018-12-20 15:02:06	--	End of message of the day.
+2018-12-20 15:02:06	--	There are 6545 users and 660 invisible on 3 servers
+2018-12-20 15:02:06	--	8 :operator(s) online
+2018-12-20 15:02:06	--	4 :unknown connections
+2018-12-20 15:02:06	--	1986 :channels formed
+2018-12-20 15:02:06	--	I have 7196 clients and 2 servers
+2018-12-20 15:02:06	--	Current Local Users: 7196  Max: 7276
+2018-12-20 15:02:06	--	Current Global Users: 7205  Max: 7285
+2018-12-20 15:02:06	--	moz-ir3.20i.81.193.IP :is now your displayed host
+2018-12-20 15:02:06	--	User mode [+x] by deadc0de
+2018-12-20 15:02:06	--	collins.mozilla.org: *** You are connected using SSL cipher "ECDHE-RSA-AES-256-GCM-AEAD"
+2018-12-20 15:02:06	--	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2018-12-20 15:02:06	--	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2018-12-20 15:02:06	--	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2018-12-20 15:02:06	--	NickServ (services@ircservices.mozilla.org): Password accepted - you are now recognized.
+2018-12-20 15:02:06	--	You are now logged in as deadc0de (deadc0de!deadc0de@moz-ir3.20i.81.193.IP)
+2018-12-20 15:02:06	--	User mode [+rR] by NickServ
+2018-12-20 15:05:59	--	irc: connecting to server irc.mozilla.org/6697 (SSL)...
+2018-12-20 15:05:59	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-12-20 15:05:59	--	gnutls: receiving 2 certificates
+2018-12-20 15:05:59	--	 - certificate[1] info:
+2018-12-20 15:05:59	--	   - subject `CN=irc.mozilla.org,OU=WebOps,O=Mozilla Corporation,L=Mountain View,ST=California,C=US', issuer `CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US', serial 0x05a9bfd42c5c6a6ca4a7c435c674b23c, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-22 00:00:00 UTC', expires `2019-08-27 12:00:00 UTC', pin-sha256="2ME/a17rVPZtJVvATsfnkHfq3HUZK/jOHKx69SMaWWc="
+2018-12-20 15:05:59	--	 - certificate[2] info:
+2018-12-20 15:05:59	--	   - subject `CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US', issuer `CN=DigiCert Global Root CA,OU=www.digicert.com,O=DigiCert Inc,C=US', serial 0x01fda3eb6eca75c888438b724bcfbc91, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-03-08 12:00:00 UTC', expires `2023-03-08 12:00:00 UTC', pin-sha256="5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w="
+2018-12-20 15:05:59	--	gnutls: peer's certificate is trusted
+2018-12-20 15:06:00	--	irc: connected to irc.mozilla.org/6697 (63.245.208.110)
+2018-12-20 15:06:00	--	collins.mozilla.org: *** Looking up your hostname...
+2018-12-20 15:06:00	--	collins.mozilla.org: *** Could not resolve your hostname: Domain name not found; using your IP address (193.81.202.249) instead.
+2018-12-20 15:06:01	--	collins.mozilla.org: Welcome to Mozilla!
+2018-12-20 15:06:01	--	Welcome to the Mozilla IRC Network deadc0de!deadc0de@193.81.202.249
+2018-12-20 15:06:01	--	MSG(nickserv): identify ***********
+2018-12-20 15:06:01	--	Your host is collins.mozilla.org, running version InspIRCd-2.0
+2018-12-20 15:06:01	--	This server was created 22:24:50 Aug 20 2018
+2018-12-20 15:06:01	--	collins.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFJKLMNOQRSTYZabcefghijklmnopqrstuvz FJLYZabefghjkloqv
+2018-12-20 15:06:01	--	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FJLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2018-12-20 15:06:01	--	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2018-12-20 15:06:01	--	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2018-12-20 15:06:01	--	381ACY8U3 :your unique ID
+2018-12-20 15:06:01	--	collins.mozilla.org message of the day
+2018-12-20 15:06:01	--	-                               _____
+2018-12-20 15:06:01	--	-                   _________  / / (_)___  _____
+2018-12-20 15:06:01	--	-                  / ___/ __ \/ / / / __ \/ ___/
+2018-12-20 15:06:01	--	-                 / /__/ /_/ / / / / / / (__  )
+2018-12-20 15:06:01	--	-                 \___/\____/_/_/_/_/ /_/____/
+2018-12-20 15:06:01	--	-
+2018-12-20 15:06:01	--	-
+2018-12-20 15:06:01	--	-
+2018-12-20 15:06:01	--	-                  M O Z I L L A   D O T   O R G
+2018-12-20 15:06:01	--	-                    https://www.mozilla.org/
+2018-12-20 15:06:01	--	-
+2018-12-20 15:06:01	--	- =================================================================
+2018-12-20 15:06:01	--	-  This server is for use by Mozilla developers, testers, and
+2018-12-20 15:06:01	--	-  users. If you are not one, please find another server.
+2018-12-20 15:06:01	--	-
+2018-12-20 15:06:01	--	-  NOTICE: Your IP address will be portscanned by our open
+2018-12-20 15:06:01	--	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2018-12-20 15:06:01	--	-
+2018-12-20 15:06:01	--	- =================================================================
+2018-12-20 15:06:01	--	-  Project information:
+2018-12-20 15:06:01	--	-   Firefox                https://support.mozilla.org/
+2018-12-20 15:06:01	--	-   Mobile                 https://support.mozilla.org/mobile
+2018-12-20 15:06:01	--	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2018-12-20 15:06:01	--	-
+2018-12-20 15:06:01	--	-  Help for new contributors:
+2018-12-20 15:06:01	--	-   https://developer.mozilla.org/Introduction
+2018-12-20 15:06:01	--	-
+2018-12-20 15:06:01	--	- =================================================================
+2018-12-20 15:06:01	--	-  Ports:
+2018-12-20 15:06:01	--	-   Non-SSL: 6665 - 6669
+2018-12-20 15:06:01	--	-       SSL: 6697, 8443
+2018-12-20 15:06:01	--	- =================================================================
+2018-12-20 15:06:01	--	-
+2018-12-20 15:06:01	--	-  For a list of other helpful channels please visit
+2018-12-20 15:06:01	--	-  https://wiki.mozilla.org/IRC or use the /list command.
+2018-12-20 15:06:01	--	-  Additional help with IRC at http://www.irchelp.org/
+2018-12-20 15:06:01	--	-
+2018-12-20 15:06:01	--	End of message of the day.
+2018-12-20 15:06:01	--	There are 6547 users and 659 invisible on 3 servers
+2018-12-20 15:06:01	--	8 :operator(s) online
+2018-12-20 15:06:01	--	6 :unknown connections
+2018-12-20 15:06:01	--	1984 :channels formed
+2018-12-20 15:06:01	--	I have 7197 clients and 2 servers
+2018-12-20 15:06:01	--	Current Local Users: 7197  Max: 7276
+2018-12-20 15:06:01	--	Current Global Users: 7206  Max: 7285
+2018-12-20 15:06:01	--	moz-ir3.20i.81.193.IP :is now your displayed host
+2018-12-20 15:06:01	--	User mode [+x] by deadc0de
+2018-12-20 15:06:01	--	collins.mozilla.org: *** You are connected using SSL cipher "ECDHE-RSA-AES-256-GCM-AEAD"
+2018-12-20 15:06:01	--	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2018-12-20 15:06:01	--	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2018-12-20 15:06:01	--	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2018-12-20 15:06:01	--	NickServ (services@ircservices.mozilla.org): Password accepted - you are now recognized.
+2018-12-20 15:06:01	--	You are now logged in as deadc0de (deadc0de!deadc0de@moz-ir3.20i.81.193.IP)
+2018-12-20 15:06:01	--	User mode [+rR] by NickServ
+2018-12-20 15:08:12	--	irc: connecting to server irc.mozilla.org/6697 (SSL)...
+2018-12-20 15:08:13	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-12-20 15:08:13	--	gnutls: receiving 2 certificates
+2018-12-20 15:08:13	--	 - certificate[1] info:
+2018-12-20 15:08:13	--	   - subject `CN=irc.mozilla.org,OU=WebOps,O=Mozilla Corporation,L=Mountain View,ST=California,C=US', issuer `CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US', serial 0x05a9bfd42c5c6a6ca4a7c435c674b23c, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-22 00:00:00 UTC', expires `2019-08-27 12:00:00 UTC', pin-sha256="2ME/a17rVPZtJVvATsfnkHfq3HUZK/jOHKx69SMaWWc="
+2018-12-20 15:08:13	--	 - certificate[2] info:
+2018-12-20 15:08:13	--	   - subject `CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US', issuer `CN=DigiCert Global Root CA,OU=www.digicert.com,O=DigiCert Inc,C=US', serial 0x01fda3eb6eca75c888438b724bcfbc91, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-03-08 12:00:00 UTC', expires `2023-03-08 12:00:00 UTC', pin-sha256="5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w="
+2018-12-20 15:08:13	--	gnutls: peer's certificate is trusted
+2018-12-20 15:08:13	--	irc: connected to irc.mozilla.org/6697 (63.245.208.110)
+2018-12-20 15:08:13	--	collins.mozilla.org: *** Looking up your hostname...
+2018-12-20 15:08:13	--	collins.mozilla.org: *** Could not resolve your hostname: Domain name not found; using your IP address (193.81.202.249) instead.
+2018-12-20 15:08:15	--	collins.mozilla.org: Welcome to Mozilla!
+2018-12-20 15:08:15	--	Welcome to the Mozilla IRC Network deadc0de!deadc0de@193.81.202.249
+2018-12-20 15:08:15	--	MSG(nickserv): identify ***********
+2018-12-20 15:08:15	--	Your host is collins.mozilla.org, running version InspIRCd-2.0
+2018-12-20 15:08:15	--	This server was created 22:24:50 Aug 20 2018
+2018-12-20 15:08:15	--	collins.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFJKLMNOQRSTYZabcefghijklmnopqrstuvz FJLYZabefghjkloqv
+2018-12-20 15:08:15	--	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FJLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2018-12-20 15:08:15	--	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2018-12-20 15:08:15	--	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2018-12-20 15:08:15	--	381ACY8XI :your unique ID
+2018-12-20 15:08:15	--	collins.mozilla.org message of the day
+2018-12-20 15:08:15	--	-                               _____
+2018-12-20 15:08:15	--	-                   _________  / / (_)___  _____
+2018-12-20 15:08:15	--	-                  / ___/ __ \/ / / / __ \/ ___/
+2018-12-20 15:08:15	--	-                 / /__/ /_/ / / / / / / (__  )
+2018-12-20 15:08:15	--	-                 \___/\____/_/_/_/_/ /_/____/
+2018-12-20 15:08:15	--	-
+2018-12-20 15:08:15	--	-
+2018-12-20 15:08:15	--	-
+2018-12-20 15:08:15	--	-                  M O Z I L L A   D O T   O R G
+2018-12-20 15:08:15	--	-                    https://www.mozilla.org/
+2018-12-20 15:08:15	--	-
+2018-12-20 15:08:15	--	- =================================================================
+2018-12-20 15:08:15	--	-  This server is for use by Mozilla developers, testers, and
+2018-12-20 15:08:15	--	-  users. If you are not one, please find another server.
+2018-12-20 15:08:15	--	-
+2018-12-20 15:08:15	--	-  NOTICE: Your IP address will be portscanned by our open
+2018-12-20 15:08:15	--	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2018-12-20 15:08:15	--	-
+2018-12-20 15:08:15	--	- =================================================================
+2018-12-20 15:08:15	--	-  Project information:
+2018-12-20 15:08:15	--	-   Firefox                https://support.mozilla.org/
+2018-12-20 15:08:15	--	-   Mobile                 https://support.mozilla.org/mobile
+2018-12-20 15:08:15	--	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2018-12-20 15:08:15	--	-
+2018-12-20 15:08:15	--	-  Help for new contributors:
+2018-12-20 15:08:15	--	-   https://developer.mozilla.org/Introduction
+2018-12-20 15:08:15	--	-
+2018-12-20 15:08:15	--	- =================================================================
+2018-12-20 15:08:15	--	-  Ports:
+2018-12-20 15:08:15	--	-   Non-SSL: 6665 - 6669
+2018-12-20 15:08:15	--	-       SSL: 6697, 8443
+2018-12-20 15:08:15	--	- =================================================================
+2018-12-20 15:08:15	--	-
+2018-12-20 15:08:15	--	-  For a list of other helpful channels please visit
+2018-12-20 15:08:15	--	-  https://wiki.mozilla.org/IRC or use the /list command.
+2018-12-20 15:08:15	--	-  Additional help with IRC at http://www.irchelp.org/
+2018-12-20 15:08:15	--	-
+2018-12-20 15:08:15	--	End of message of the day.
+2018-12-20 15:08:15	--	There are 6548 users and 659 invisible on 3 servers
+2018-12-20 15:08:15	--	8 :operator(s) online
+2018-12-20 15:08:15	--	5 :unknown connections
+2018-12-20 15:08:15	--	1983 :channels formed
+2018-12-20 15:08:15	--	I have 7198 clients and 2 servers
+2018-12-20 15:08:15	--	Current Local Users: 7198  Max: 7276
+2018-12-20 15:08:15	--	Current Global Users: 7207  Max: 7285
+2018-12-20 15:08:15	--	moz-ir3.20i.81.193.IP :is now your displayed host
+2018-12-20 15:08:15	--	User mode [+x] by deadc0de
+2018-12-20 15:08:15	--	collins.mozilla.org: *** You are connected using SSL cipher "ECDHE-RSA-AES-256-GCM-AEAD"
+2018-12-20 15:08:15	--	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2018-12-20 15:08:15	--	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2018-12-20 15:08:15	--	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2018-12-20 15:08:15	--	NickServ (services@ircservices.mozilla.org): Password accepted - you are now recognized.
+2018-12-20 15:08:15	--	You are now logged in as deadc0de (deadc0de!deadc0de@moz-ir3.20i.81.193.IP)
+2018-12-20 15:08:15	--	User mode [+rR] by NickServ
+2018-12-20 15:08:20	=!=	irc: this buffer is not a channel!
+2018-12-22 14:32:56	--	irc: connecting to server irc.mozilla.org/6697 (SSL)...
+2018-12-22 14:32:57	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-12-22 14:32:57	--	gnutls: receiving 2 certificates
+2018-12-22 14:32:57	--	 - certificate[1] info:
+2018-12-22 14:32:57	--	   - subject `CN=irc.mozilla.org,OU=WebOps,O=Mozilla Corporation,L=Mountain View,ST=California,C=US', issuer `CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US', serial 0x05a9bfd42c5c6a6ca4a7c435c674b23c, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-22 00:00:00 UTC', expires `2019-08-27 12:00:00 UTC', pin-sha256="2ME/a17rVPZtJVvATsfnkHfq3HUZK/jOHKx69SMaWWc="
+2018-12-22 14:32:57	--	 - certificate[2] info:
+2018-12-22 14:32:57	--	   - subject `CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US', issuer `CN=DigiCert Global Root CA,OU=www.digicert.com,O=DigiCert Inc,C=US', serial 0x01fda3eb6eca75c888438b724bcfbc91, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-03-08 12:00:00 UTC', expires `2023-03-08 12:00:00 UTC', pin-sha256="5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w="
+2018-12-22 14:32:57	--	gnutls: peer's certificate is trusted
+2018-12-22 14:32:57	--	irc: connected to irc.mozilla.org/6697 (63.245.208.110)
+2018-12-22 14:32:57	--	collins.mozilla.org: *** Looking up your hostname...
+2018-12-22 14:32:57	--	collins.mozilla.org: *** Found your hostname (193-81-202-249.adsl.highway.telekom.at)
+2018-12-22 14:32:59	--	collins.mozilla.org: Welcome to Mozilla!
+2018-12-22 14:32:59	--	Welcome to the Mozilla IRC Network deadc0de!deadc0de@193-81-202-249.adsl.highway.telekom.at
+2018-12-22 14:32:59	--	MSG(nickserv): identify ***********
+2018-12-22 14:32:59	--	Your host is collins.mozilla.org, running version InspIRCd-2.0
+2018-12-22 14:32:59	--	This server was created 22:24:50 Aug 20 2018
+2018-12-22 14:32:59	--	collins.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFJKLMNOQRSTYZabcefghijklmnopqrstuvz FJLYZabefghjkloqv
+2018-12-22 14:32:59	--	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FJLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2018-12-22 14:32:59	--	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2018-12-22 14:32:59	--	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2018-12-22 14:32:59	--	381AC001E :your unique ID
+2018-12-22 14:32:59	--	collins.mozilla.org message of the day
+2018-12-22 14:32:59	--	-                               _____
+2018-12-22 14:32:59	--	-                   _________  / / (_)___  _____
+2018-12-22 14:32:59	--	-                  / ___/ __ \/ / / / __ \/ ___/
+2018-12-22 14:32:59	--	-                 / /__/ /_/ / / / / / / (__  )
+2018-12-22 14:32:59	--	-                 \___/\____/_/_/_/_/ /_/____/
+2018-12-22 14:32:59	--	-
+2018-12-22 14:32:59	--	-
+2018-12-22 14:32:59	--	-
+2018-12-22 14:32:59	--	-                  M O Z I L L A   D O T   O R G
+2018-12-22 14:32:59	--	-                    https://www.mozilla.org/
+2018-12-22 14:32:59	--	-
+2018-12-22 14:32:59	--	- =================================================================
+2018-12-22 14:32:59	--	-  This server is for use by Mozilla developers, testers, and
+2018-12-22 14:32:59	--	-  users. If you are not one, please find another server.
+2018-12-22 14:32:59	--	-
+2018-12-22 14:32:59	--	-  NOTICE: Your IP address will be portscanned by our open
+2018-12-22 14:32:59	--	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2018-12-22 14:32:59	--	-
+2018-12-22 14:32:59	--	- =================================================================
+2018-12-22 14:32:59	--	-  Project information:
+2018-12-22 14:32:59	--	-   Firefox                https://support.mozilla.org/
+2018-12-22 14:32:59	--	-   Mobile                 https://support.mozilla.org/mobile
+2018-12-22 14:32:59	--	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2018-12-22 14:32:59	--	-
+2018-12-22 14:32:59	--	-  Help for new contributors:
+2018-12-22 14:32:59	--	-   https://developer.mozilla.org/Introduction
+2018-12-22 14:32:59	--	-
+2018-12-22 14:32:59	--	- =================================================================
+2018-12-22 14:32:59	--	-  Ports:
+2018-12-22 14:32:59	--	-   Non-SSL: 6665 - 6669
+2018-12-22 14:32:59	--	-       SSL: 6697, 8443
+2018-12-22 14:32:59	--	- =================================================================
+2018-12-22 14:32:59	--	-
+2018-12-22 14:32:59	--	-  For a list of other helpful channels please visit
+2018-12-22 14:32:59	--	-  https://wiki.mozilla.org/IRC or use the /list command.
+2018-12-22 14:32:59	--	-  Additional help with IRC at http://www.irchelp.org/
+2018-12-22 14:32:59	--	-
+2018-12-22 14:32:59	--	End of message of the day.
+2018-12-22 14:32:59	--	There are 5994 users and 633 invisible on 3 servers
+2018-12-22 14:32:59	--	8 :operator(s) online
+2018-12-22 14:32:59	--	5 :unknown connections
+2018-12-22 14:32:59	--	1844 :channels formed
+2018-12-22 14:32:59	--	I have 6618 clients and 2 servers
+2018-12-22 14:32:59	--	Current Local Users: 6618  Max: 7276
+2018-12-22 14:32:59	--	Current Global Users: 6627  Max: 7285
+2018-12-22 14:32:59	--	moz-270pf0.highway.telekom.at :is now your displayed host
+2018-12-22 14:32:59	--	User mode [+x] by deadc0de
+2018-12-22 14:32:59	--	collins.mozilla.org: *** You are connected using SSL cipher "ECDHE-RSA-AES-256-GCM-AEAD"
+2018-12-22 14:32:59	--	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2018-12-22 14:32:59	--	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2018-12-22 14:32:59	--	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2018-12-22 14:32:59	--	NickServ (services@ircservices.mozilla.org): Password accepted - you are now recognized.
+2018-12-22 14:32:59	--	You are now logged in as deadc0de (deadc0de!deadc0de@moz-270pf0.highway.telekom.at)
+2018-12-22 14:32:59	--	User mode [+rR] by NickServ
+2018-12-22 14:34:26	--	irc: connecting to server irc.mozilla.org/6697 (SSL)...
+2018-12-22 14:34:27	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-12-22 14:34:27	--	gnutls: receiving 2 certificates
+2018-12-22 14:34:27	--	 - certificate[1] info:
+2018-12-22 14:34:27	--	   - subject `CN=irc.mozilla.org,OU=WebOps,O=Mozilla Corporation,L=Mountain View,ST=California,C=US', issuer `CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US', serial 0x05a9bfd42c5c6a6ca4a7c435c674b23c, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-22 00:00:00 UTC', expires `2019-08-27 12:00:00 UTC', pin-sha256="2ME/a17rVPZtJVvATsfnkHfq3HUZK/jOHKx69SMaWWc="
+2018-12-22 14:34:27	--	 - certificate[2] info:
+2018-12-22 14:34:27	--	   - subject `CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US', issuer `CN=DigiCert Global Root CA,OU=www.digicert.com,O=DigiCert Inc,C=US', serial 0x01fda3eb6eca75c888438b724bcfbc91, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-03-08 12:00:00 UTC', expires `2023-03-08 12:00:00 UTC', pin-sha256="5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w="
+2018-12-22 14:34:27	--	gnutls: peer's certificate is trusted
+2018-12-22 14:34:27	--	irc: connected to irc.mozilla.org/6697 (63.245.208.110)
+2018-12-22 14:34:27	--	collins.mozilla.org: *** Looking up your hostname...
+2018-12-22 14:34:27	--	collins.mozilla.org: *** Found your hostname (193-81-202-249.adsl.highway.telekom.at) -- cached
+2018-12-22 14:34:29	--	collins.mozilla.org: Welcome to Mozilla!
+2018-12-22 14:34:29	--	Welcome to the Mozilla IRC Network deadc0de!deadc0de@193-81-202-249.adsl.highway.telekom.at
+2018-12-22 14:34:29	--	MSG(nickserv): identify ***********
+2018-12-22 14:34:29	--	Your host is collins.mozilla.org, running version InspIRCd-2.0
+2018-12-22 14:34:29	--	This server was created 22:24:50 Aug 20 2018
+2018-12-22 14:34:29	--	collins.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFJKLMNOQRSTYZabcefghijklmnopqrstuvz FJLYZabefghjkloqv
+2018-12-22 14:34:29	--	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FJLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2018-12-22 14:34:29	--	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2018-12-22 14:34:29	--	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2018-12-22 14:34:29	--	381AC002H :your unique ID
+2018-12-22 14:34:29	--	collins.mozilla.org message of the day
+2018-12-22 14:34:29	--	-                               _____
+2018-12-22 14:34:29	--	-                   _________  / / (_)___  _____
+2018-12-22 14:34:29	--	-                  / ___/ __ \/ / / / __ \/ ___/
+2018-12-22 14:34:29	--	-                 / /__/ /_/ / / / / / / (__  )
+2018-12-22 14:34:29	--	-                 \___/\____/_/_/_/_/ /_/____/
+2018-12-22 14:34:29	--	-
+2018-12-22 14:34:29	--	-
+2018-12-22 14:34:29	--	-
+2018-12-22 14:34:29	--	-                  M O Z I L L A   D O T   O R G
+2018-12-22 14:34:29	--	-                    https://www.mozilla.org/
+2018-12-22 14:34:29	--	-
+2018-12-22 14:34:29	--	- =================================================================
+2018-12-22 14:34:29	--	-  This server is for use by Mozilla developers, testers, and
+2018-12-22 14:34:29	--	-  users. If you are not one, please find another server.
+2018-12-22 14:34:29	--	-
+2018-12-22 14:34:29	--	-  NOTICE: Your IP address will be portscanned by our open
+2018-12-22 14:34:29	--	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2018-12-22 14:34:29	--	-
+2018-12-22 14:34:29	--	- =================================================================
+2018-12-22 14:34:29	--	-  Project information:
+2018-12-22 14:34:29	--	-   Firefox                https://support.mozilla.org/
+2018-12-22 14:34:29	--	-   Mobile                 https://support.mozilla.org/mobile
+2018-12-22 14:34:29	--	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2018-12-22 14:34:29	--	-
+2018-12-22 14:34:29	--	-  Help for new contributors:
+2018-12-22 14:34:29	--	-   https://developer.mozilla.org/Introduction
+2018-12-22 14:34:29	--	-
+2018-12-22 14:34:29	--	- =================================================================
+2018-12-22 14:34:29	--	-  Ports:
+2018-12-22 14:34:29	--	-   Non-SSL: 6665 - 6669
+2018-12-22 14:34:29	--	-       SSL: 6697, 8443
+2018-12-22 14:34:29	--	- =================================================================
+2018-12-22 14:34:29	--	-
+2018-12-22 14:34:29	--	-  For a list of other helpful channels please visit
+2018-12-22 14:34:29	--	-  https://wiki.mozilla.org/IRC or use the /list command.
+2018-12-22 14:34:29	--	-  Additional help with IRC at http://www.irchelp.org/
+2018-12-22 14:34:29	--	-
+2018-12-22 14:34:29	--	End of message of the day.
+2018-12-22 14:34:29	--	There are 5994 users and 632 invisible on 3 servers
+2018-12-22 14:34:29	--	8 :operator(s) online
+2018-12-22 14:34:29	--	1845 :channels formed
+2018-12-22 14:34:29	--	I have 6617 clients and 2 servers
+2018-12-22 14:34:29	--	Current Local Users: 6617  Max: 7276
+2018-12-22 14:34:29	--	Current Global Users: 6626  Max: 7285
+2018-12-22 14:34:29	--	moz-270pf0.highway.telekom.at :is now your displayed host
+2018-12-22 14:34:29	--	User mode [+x] by deadc0de
+2018-12-22 14:34:29	--	collins.mozilla.org: *** You are connected using SSL cipher "ECDHE-RSA-AES-256-GCM-AEAD"
+2018-12-22 14:34:29	--	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2018-12-22 14:34:29	--	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2018-12-22 14:34:29	--	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2018-12-22 14:34:29	--	NickServ (services@ircservices.mozilla.org): Password accepted - you are now recognized.
+2018-12-22 14:34:29	--	You are now logged in as deadc0de (deadc0de!deadc0de@moz-270pf0.highway.telekom.at)
+2018-12-22 14:34:29	--	User mode [+rR] by NickServ
+2018-12-22 14:35:19	--	irc: connecting to server irc.mozilla.org/6697 (SSL)...
+2018-12-22 14:35:20	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-12-22 14:35:20	--	gnutls: receiving 2 certificates
+2018-12-22 14:35:20	--	 - certificate[1] info:
+2018-12-22 14:35:20	--	   - subject `CN=irc.mozilla.org,OU=WebOps,O=Mozilla Corporation,L=Mountain View,ST=California,C=US', issuer `CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US', serial 0x05a9bfd42c5c6a6ca4a7c435c674b23c, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-22 00:00:00 UTC', expires `2019-08-27 12:00:00 UTC', pin-sha256="2ME/a17rVPZtJVvATsfnkHfq3HUZK/jOHKx69SMaWWc="
+2018-12-22 14:35:20	--	 - certificate[2] info:
+2018-12-22 14:35:20	--	   - subject `CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US', issuer `CN=DigiCert Global Root CA,OU=www.digicert.com,O=DigiCert Inc,C=US', serial 0x01fda3eb6eca75c888438b724bcfbc91, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-03-08 12:00:00 UTC', expires `2023-03-08 12:00:00 UTC', pin-sha256="5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w="
+2018-12-22 14:35:20	--	gnutls: peer's certificate is trusted
+2018-12-22 14:35:20	--	irc: connected to irc.mozilla.org/6697 (63.245.208.110)
+2018-12-22 14:35:20	--	collins.mozilla.org: *** Looking up your hostname...
+2018-12-22 14:35:20	--	collins.mozilla.org: *** Found your hostname (193-81-202-249.adsl.highway.telekom.at) -- cached
+2018-12-22 14:35:22	--	collins.mozilla.org: Welcome to Mozilla!
+2018-12-22 14:35:22	--	Welcome to the Mozilla IRC Network deadc0de!deadc0de@193-81-202-249.adsl.highway.telekom.at
+2018-12-22 14:35:22	--	MSG(nickserv): identify ***********
+2018-12-22 14:35:22	--	Your host is collins.mozilla.org, running version InspIRCd-2.0
+2018-12-22 14:35:22	--	This server was created 22:24:50 Aug 20 2018
+2018-12-22 14:35:22	--	collins.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFJKLMNOQRSTYZabcefghijklmnopqrstuvz FJLYZabefghjkloqv
+2018-12-22 14:35:22	--	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FJLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2018-12-22 14:35:22	--	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2018-12-22 14:35:22	--	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2018-12-22 14:35:22	--	381AC0024 :your unique ID
+2018-12-22 14:35:22	--	collins.mozilla.org message of the day
+2018-12-22 14:35:22	--	-                               _____
+2018-12-22 14:35:22	--	-                   _________  / / (_)___  _____
+2018-12-22 14:35:22	--	-                  / ___/ __ \/ / / / __ \/ ___/
+2018-12-22 14:35:22	--	-                 / /__/ /_/ / / / / / / (__  )
+2018-12-22 14:35:22	--	-                 \___/\____/_/_/_/_/ /_/____/
+2018-12-22 14:35:22	--	-
+2018-12-22 14:35:22	--	-
+2018-12-22 14:35:22	--	-
+2018-12-22 14:35:22	--	-                  M O Z I L L A   D O T   O R G
+2018-12-22 14:35:22	--	-                    https://www.mozilla.org/
+2018-12-22 14:35:22	--	-
+2018-12-22 14:35:22	--	- =================================================================
+2018-12-22 14:35:22	--	-  This server is for use by Mozilla developers, testers, and
+2018-12-22 14:35:22	--	-  users. If you are not one, please find another server.
+2018-12-22 14:35:22	--	-
+2018-12-22 14:35:22	--	-  NOTICE: Your IP address will be portscanned by our open
+2018-12-22 14:35:22	--	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2018-12-22 14:35:22	--	-
+2018-12-22 14:35:22	--	- =================================================================
+2018-12-22 14:35:22	--	-  Project information:
+2018-12-22 14:35:22	--	-   Firefox                https://support.mozilla.org/
+2018-12-22 14:35:22	--	-   Mobile                 https://support.mozilla.org/mobile
+2018-12-22 14:35:22	--	-   Thunderbird   

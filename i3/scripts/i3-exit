@@ -1,0 +1,26 @@
+#!/bin/bash
+
+lock() {
+    TEMPFILE=`mktemp /tmp/screenshot.XXXXX.png`
+    TEMPFILE_BLUR=`mktemp /tmp/screenshot_blur.XXXXX.png`
+    scrot ${TEMPFILE}
+    convert ${TEMPFILE} -blur 0x5 "${TEMPFILE_BLUR}"
+    rm -f ${TEMPFILE}
+    i3lock -i ${TEMPFILE_BLUR}
+}
+
+case "$1" in
+    lock)
+        lock
+        ;;
+    logout)
+        i3-msg exit
+        ;;
+    suspend)
+        ;;
+    *)
+        echo "Usage $0 {lock|logout}"
+        exit 2
+esac
+
+exit 0

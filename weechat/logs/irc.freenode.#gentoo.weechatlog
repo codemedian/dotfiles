@@ -1,0 +1,93 @@
+2018-12-20 15:08:29	-->	deadc0de (~deadc0de@193-81-202-249.adsl.highway.telekom.at) has joined #gentoo
+2018-12-20 15:08:29	--	Topic for #gentoo is "Gentoo Linux Support | Can't speak? /j #gentoo-ops | long pastes: wgetpaste or dpaste.com | Perl conflicts? https://goo.gl/7Miost | Be nice! https://goo.gl/gvnCii | Switch to profile 17.0? https://goo.gl/Kv9vC2 | startx permission problems? emerge -1a xorg-server[suid] or use elogind, systemd, or a DM"
+2018-12-20 15:08:29	--	Topic set by username234 (~username2@unaffiliated/username234) on Mon, 05 Nov 2018 04:08:19
+2018-12-20 15:08:30	--	Channel #gentoo: 1137 nicks (3 ops, 55 voices, 1079 normals)
+2018-12-20 15:08:30	--	PvNotice(ChanServ): Welcome to #gentoo || Acceptable Usage Policy @ http://www.gentoo.org/main/en/irc.xml || Keep the language clean || Google is your friend || No bots or scripts that talk || Turn off public away messages || More than three lines to #flood or a pastebin service, no spam!
+2018-12-20 15:08:30	--	URL for #gentoo: http://www.gentoo.org
+2018-12-20 15:08:32	--	Channel created on Sat, 15 Sep 2001 05:15:36
+2018-12-20 15:09:10	<--	Hariama (~null@185.194.187.141) has quit (Client Quit)
+2018-12-20 15:09:10	+grknight	i do see you have missing drivers for I2C.  perhaps the dock is on that bus
+2018-12-20 15:09:27	hogren	oh
+2018-12-20 15:09:48	hogren	I just see that in the kernel option , I will activate
+2018-12-20 15:09:57	+grknight	you need several.. such as CONFIG_X86_INTEL_LPSS, I2C_DESIGNWARE_PLATFORM, I2C_DESIGNWARE_PCI, MFD_INTEL_LPSS_PCI,  I2C_HID
+2018-12-20 15:12:40	<--	jnt (~jnt@dyndsl-178-142-064-011.ewe-ip-backbone.de) has quit (Ping timeout: 250 seconds)
+2018-12-20 15:12:40	-->	aplainzetakind (~dk@2E8BD6FE.catv.pool.telekom.hu) has joined #gentoo
+2018-12-20 15:12:40	<--	noodlepie (~Phillip@host-92-19-234-97.static.as13285.net) has quit (Ping timeout: 244 seconds)
+2018-12-20 15:12:40	<--	paiton (~paul@ip68-228-239-173.ph.ph.cox.net) has quit (Quit: Leaving.)
+2018-12-20 15:12:40	-->	jnt (~jnt@host-091-097-186-230.ewe-ip-backbone.de) has joined #gentoo
+2018-12-20 15:12:40	-->	alex_laptop (~quassel@unaffiliated/alexandros-c/x-1684531) has joined #gentoo
+2018-12-20 15:12:40	<--	ponbiki (~ponbiki@cpe-74-66-137-41.nyc.res.rr.com) has quit (Ping timeout: 268 seconds)
+2018-12-20 15:12:49	-->	jwhoisthat (~jodie@24.215.123.241) has joined #gentoo
+2018-12-20 15:13:54	<--	spY|da (~spY|da@mail.linuxjunkies.de) has quit (Quit: WeeChat 2.3)
+2018-12-20 15:13:55	alex_laptop	good what is the difference between eix-sync abd eix-update?
+2018-12-20 15:14:04	-->	spY|da (~spY|da@2a0a:51c0::fdf) has joined #gentoo
+2018-12-20 15:14:09	hogren	grknight: I activate the five
+2018-12-20 15:14:33	<--	spY|da (~spY|da@2a0a:51c0::fdf) has quit (Client Quit)
+2018-12-20 15:14:42	-->	spY|da (~spY|da@2a0a:51c0::fdf) has joined #gentoo
+2018-12-20 15:14:48	hogren	grknight: How see you that ? just because there is no "in use" driver ?
+2018-12-20 15:15:09	+grknight	alex_laptop: eix-sync does more: emerge --sync; copy old index to temp locataion; eix-update; eix-diff old and new
+2018-12-20 15:15:15	<--	Starhowl (~Starhowl@p57876F59.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2018-12-20 15:16:02	+grknight	hogren: yes
+2018-12-20 15:17:43	-->	chozen (~chozen@162-193-65-215.lightspeed.tukrga.sbcglobal.net) has joined #gentoo
+2018-12-20 15:19:06	-->	AsumFace (~asumface@ip1f100ee3.dynamic.kabel-deutschland.de) has joined #gentoo
+2018-12-20 15:20:43	<--	spY|da (~spY|da@2a0a:51c0::fdf) has quit (Quit: WeeChat 2.3)
+2018-12-20 15:20:45	grawity	armin: I ended up writing this for Demos https://gist.github.com/grawity/5f52f8ded53c7ffe17ed102aea226dbc
+2018-12-20 15:20:56	-->	spY|da (~spY|da@2a0a:51c0::fdf) has joined #gentoo
+2018-12-20 15:23:15	hogren	grknight: I reboot
+2018-12-20 15:23:27	hogren	grknight: suspense :)
+2018-12-20 15:23:35	alex_laptop	thanks grknight, so what you are saying is that eix-sync includes exi-update and eix-diff?
+2018-12-20 15:23:43	+grknight	alex_laptop: yes
+2018-12-20 15:23:52	<--	hogren (~user@static-qvn-qvu-159128.business.bouyguestelecom.com) has quit (Remote host closed the connection)
+2018-12-20 15:23:52	-->	pstk29 (~pstk@220.118.172.95) has joined #gentoo
+2018-12-20 15:24:05	<--	pstk29 (~pstk@220.118.172.95) has quit (Remote host closed the connection)
+2018-12-20 15:25:33	armin	grawity: interesting. any hint about compiling this?  https://gist.github.com/netzverweigerer/bb620764e1a4889daae8462cf4e5fb69
+2018-12-20 15:26:39	grawity	see first line of the file
+2018-12-20 15:27:06	-->	hogren (~user@static-qvn-qvu-159128.business.bouyguestelecom.com) has joined #gentoo
+2018-12-20 15:27:16	hogren	grknight: … doesn't work
+2018-12-20 15:27:25	<--	initiumdoeslinux (~initiumdo@eduroam14.nat.wireless.lu.se) has quit (Remote host closed the connection)
+2018-12-20 15:27:58	armin	grawity: armin     2526  0.0  0.0  14456  1280 pts/0    S+   15:27   0:00 ./xmon
+2018-12-20 15:28:03	armin	grawity: perfect...
+2018-12-20 15:28:14	grawity	I'm not sure if I am using XGetEventData() correctly tbh
+2018-12-20 15:28:22	hogren	grknight: I have Kernel driver in use: intel-lpss now
+2018-12-20 15:28:32	armin	grawity: good starting point nevertheless
+2018-12-20 15:28:48	grawity	(I basically copypasted a lot of stuff from http://who-t.blogspot.com/2009/05/xi2-recipes-part-1.html)
+2018-12-20 15:29:03	-->	GentooTen (~gentoo@95.7.157.117) has joined #gentoo
+2018-12-20 15:29:50	<--	ShiPa (~shipa@134.17.26.210) has quit (Remote host closed the connection)
+2018-12-20 15:30:03	armin	grawity: superb, thanks for the info!
+2018-12-20 15:32:08	<--	SkunkyFone (~skunky@unaffiliated/skunky) has quit (Ping timeout: 245 seconds)
+2018-12-20 15:32:19	-->	Forza (~Forza@h-110-233.A357.priv.bahnhof.se) has joined #gentoo
+2018-12-20 15:34:17	hogren	grknight: If you want, that is my journalctl when I unplug / plug  the docking station
+2018-12-20 15:34:43	hogren	https://pastebin.com/ad6KY2ey
+2018-12-20 15:34:50	-->	noodlepie (~Phillip@188.29.165.85.threembb.co.uk) has joined #gentoo
+2018-12-20 15:35:37	<--	drazan (~drazan@23.252.59.120) has quit (Ping timeout: 250 seconds)
+2018-12-20 15:35:56	<--	noodlepie (~Phillip@188.29.165.85.threembb.co.uk) has quit (Read error: Connection reset by peer)
+2018-12-20 15:36:25	--	JohnnyMnemonic is now known as JohnnyBlaze
+2018-12-20 15:37:37	<--	Jj (b0d7e8be@gateway/web/freenode/ip.176.215.232.190) has quit (Ping timeout: 256 seconds)
+2018-12-20 15:37:56	-->	jtriley (~jtriley@140.247.242.54) has joined #gentoo
+2018-12-20 15:38:33	-->	noodlepie (~Phillip@188.29.165.43.threembb.co.uk) has joined #gentoo
+2018-12-20 15:39:17	<--	kosyx (~kosyx@72.34.116.10) has quit (Remote host closed the connection)
+2018-12-20 15:39:31	<--	GentooTen (~gentoo@95.7.157.117) has quit (Ping timeout: 246 seconds)
+2018-12-20 15:39:39	-->	kosyx (~kosyx@72.34.116.10) has joined #gentoo
+2018-12-20 15:41:52	-->	drazan (~drazan@23.252.59.120) has joined #gentoo
+2018-12-20 15:44:57	<--	JohnnyBlaze (freqnasty@smile.often.umbrellix.net) has quit (Changing host)
+2018-12-20 15:44:57	-->	JohnnyBlaze (freqnasty@unaffiliated/johnnymnemonic) has joined #gentoo
+2018-12-20 15:46:39	<--	kupi (uid212005@gateway/web/irccloud.com/x-lpfmgbxolphhnmmb) has quit (Quit: Connection closed for inactivity)
+2018-12-20 15:46:59	<--	noodlepie (~Phillip@188.29.165.43.threembb.co.uk) has quit (Read error: Connection reset by peer)
+2018-12-20 15:49:24	-->	cdown (~cdown@199.201.66.44) has joined #gentoo
+2018-12-20 15:50:31	-->	kingkongmok (~kingkongm@113.119.185.174) has joined #gentoo
+2018-12-20 15:51:32	-->	cdown_ (~cdown@199.201.66.0) has joined #gentoo
+2018-12-20 15:52:33	<--	GurliGebis (~GurliGebi@unaffiliated/gurligebis) has quit (Ping timeout: 250 seconds)
+2018-12-20 15:52:48	-->	noodlepie (~Phillip@188.29.164.176.threembb.co.uk) has joined #gentoo
+2018-12-20 15:53:14	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2018-12-20 15:53:37	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #gentoo
+2018-12-20 15:53:45	<--	cdown (~cdown@199.201.66.44) has quit (Ping timeout: 246 seconds)
+2018-12-20 15:53:48	<--	jtriley (~jtriley@140.247.242.54) has quit (Ping timeout: 250 seconds)
+2018-12-20 15:53:54	--	cdown_ is now known as cdown
+2018-12-20 15:54:12	<--	xmorph (~xt_@unaffiliated/xmorph) has quit (Quit: WeeChat 2.3)
+2018-12-20 15:55:01	-->	pinkfluffysocks (~Thunderbi@2.26.217.215) has joined #gentoo
+2018-12-20 15:56:37	mingdao	hogren: That's one of those USB plugin "docking stations"?
+2018-12-20 15:56:50	<--	yqt (~yqt@81.88.230.28) has quit (Ping timeout: 250 seconds)
+2018-12-20 15:57:45	-->	HighMemoryDaemon (~user@71-88-43-52.dhcp.nwtn.ct.charter.com) has joined #gentoo
+2018-12-20 15:59:07	<--	KalleBlom (~KalleBlom@p5B055027.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2018-12-20 15:59:12	armin	grawity: fwiw your xwin solution works perfectly on my end
+2018-12-20 15:59:51	armin	grawity: am i allowed to gist a modified version of it publicly?
