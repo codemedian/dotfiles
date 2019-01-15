@@ -41,10 +41,10 @@ URxvt*visualBell:  false
 
 URxvt*loginShell: true
 URxvt.scrollBar: false
-URxvt*font: xft:DroidSansMono Nerd Font Mono:pixelsize=26
+URxvt*font: xft:DroidSansMono Nerd Font Mono:pixelsize=14
 
-URxvt.transparent:   true
-URxvt.shading:       32
+!URxvt.transparent:   true
+!URxvt.shading:       32
 URxvt*depth:         32
 URxvt*background:    rgba:0000/0000/0200/c800
 

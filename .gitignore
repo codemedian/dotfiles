@@ -13,3 +13,7 @@ gtk-*
 goa-*
 configstore
 libreoffice
+weechat/logs/*
+eog
+google-chrome
+menus

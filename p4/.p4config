@@ -1,0 +1,5 @@
+P4CLIENT=chris_ubuntu
+P4USER=christophs
+P4HOST=perforce:1666
+P4EDITOR=vim
+P4DIFF=vimdiff
