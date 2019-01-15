@@ -1,7 +1,16 @@
 # DotFiles 
 
 # VIM
-To be writte
+To be written
 
 # TMUX
-To be writte
+To be written
+
+# Weechat
+To be written
+
+# Urxvt
+To be written
+
+# Perforce
+To be written
