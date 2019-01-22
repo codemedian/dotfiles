@@ -14,6 +14,8 @@ goa-*
 configstore
 libreoffice
 weechat/logs/*
+weechat/weechat.log
+weechat/sec.conf
 eog
 google-chrome
 menus
