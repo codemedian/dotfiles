@@ -22,3 +22,18 @@ To be written
 
 # Perforce
 To be written
+
+# LINE
+At the time of writing, line is only available for Linux as a chrome extension. To make it play nice without having to go via chrome, the following desktop file can be added
+
+Find the extension id by going to chrome://extensions, open click on details of the desired extension and check the URL. Extensions should be installed into `~/.local/google-chome/Default/Extensions/` which is another way to obtain the extensions ID
+```
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=LINE
+Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app=chrome-extension:{extension-id}/index.html
+Icon={path_to_icon}
+```
