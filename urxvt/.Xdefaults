@@ -36,13 +36,15 @@
 *color15: #ebdbb2
 
 
-URxvt*termName:  screen-256color
+URxvt*termName:  rxvt-unicode-256color
 URxvt*visualBell:  false
 
 URxvt*loginShell: true
 URxvt.scrollBar: false
-!URxvt*font: xft:DroidSansMono Nerd Font Mono:pixelsize=14
+!URxvt*font: xft:DroidSansMono Nerd Font Mono:pixelsize=12
 URxvt*font: xft:DroidSansMono Nerd Font Mono:pixelsize=24
+!URxvt*font: xft:DroidSansMono Nerd Font Mono:pixelsize=18
+!URxvt*font: xft:JetBrains Mono Medium:pixelsize=12
 
 !URxvt.transparent:   true
 !URxvt.shading:       32
