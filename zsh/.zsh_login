@@ -1,0 +1,61 @@
+setopt AUTO_CD            # make ~/Documents behave the same as cd ~/Documents
+setopt EXTENDED_HISTORY   # Adds timestamp and elapsed command time to history
+setopt SHARE_HISTORY      # share history across multiple sessions
+setopt APPEND_HISTORY     # append to history
+setopt INC_APPEND_HISTORY # Ad commands when they're typed, not when shell exits
+
+
+#### Enable this section if history grows too large
+# setopt HIST_EXPIRE_DUPS_FIRST  # expire duplicates first
+# setopt HIST_IGNORE_DUPS        # do not store duplications
+# setopt HIST_FIND_NO_DUPS       # ignore duplicates when searching
+# setopt HIST_REDUCE_BLANKS      # removes blank lines from history
+
+#setopt HIST_VERIFY    # show expanded history command before executing
+
+setopt CORRECT        # attempt to correct typos
+setopt CORRECT_ALL    # attempt to correct typos
+setopt PROMPT_SUBST
+
+
+alias ll='ls -la'
+
+# Load version control information
+autoload -Uz vcs_info
+function precmd() { vcs_info }
+zstyle ':vcs_info:*' enable git
+
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' unstagedstr '%F{167}!%f'
+zstyle ':vcs_info:git:*' stagedstr '%F{106}+%f'
+zstyle ':vcs_info:git:*' formats '%F{72}(%b%f%m%u%c%F{72})%f'
+zstyle ':vcs_info:git:*' actionformats '(%F{237}(%a |%m)%f%m%u%c)'
+zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
+
+
++vi-git-untracked() {
+    if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
+        git status --porcelain | grep -m 1 '^??' &>/dev/null
+    then
+        hook_com[misc]='%F{172}?%f'
+    fi
+}
+
+if (($+SSH_CLIENT)); then
+    PROMPT='%(?..%F{167}%?%f )%F{132}[ssh]%f %B%F{237}%~%f%b${vcs_info_msg_0_} %B%(!.#.%#)%b '
+else
+    PROMPT='%(?..%F{167}%?%f )%B%F{237}%~%f%b${vcs_info_msg_0_} %B%(!.#.%#)%b '
+fi
+
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
+function brew-list-amazon-packages {
+    TAP=amazon/homebrew-amazon;
+    TAP_PREFIX=$(brew --prefix)/Homebrew/Library/Taps;
+    ls $TAP_PREFIX/$TAP/Formula/*.rb 2>/dev/null || ls $TAP_PREFIX/$TAP/*.rb 2>/dev/null | xargs -I{} basename {} .rbI
+}
