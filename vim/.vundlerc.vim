@@ -3,7 +3,7 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-"Plugin 'ycm-core/YouCompleteMe.git'
+Plugin 'ycm-core/YouCompleteMe.git'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdcommenter'

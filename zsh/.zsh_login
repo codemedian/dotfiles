@@ -45,6 +45,8 @@ zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
 
 if (($+SSH_CLIENT)); then
     PROMPT='%(?..%F{167}%?%f )%F{132}[ssh]%f %B%F{237}%~%f%b${vcs_info_msg_0_} %B%(!.#.%#)%b '
+elif [ "${TERMINAL_EMULATOR}" = "JetBrains-JediTerm" ]; then
+    PROMPT='%(?..%F{167}%?%f )%B%F{241}%~%f%b${vcs_info_msg_0_} %B%(!.#.%#)%b '
 else
     PROMPT='%(?..%F{167}%?%f )%B%F{237}%~%f%b${vcs_info_msg_0_} %B%(!.#.%#)%b '
 fi
