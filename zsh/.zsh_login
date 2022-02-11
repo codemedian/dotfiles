@@ -13,8 +13,7 @@ setopt INC_APPEND_HISTORY # Ad commands when they're typed, not when shell exits
 
 #setopt HIST_VERIFY    # show expanded history command before executing
 
-setopt CORRECT        # attempt to correct typos
-setopt CORRECT_ALL    # attempt to correct typos
+unsetopt CORRECT        # attempt to correct typos
 setopt PROMPT_SUBST
 setopt RMSTARSILENT   # don't ask for confirmation on rm *
 
