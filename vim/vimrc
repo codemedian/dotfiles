@@ -2,7 +2,7 @@ set nocompatible
 filetype off
 
 " figure out absolute path to vundlerc.vim and source it
-let vundlerc = fnamemodify(resolve(expand('$HOME/.vimrc')), ':h') . "/.vundlerc.vim"
+let vundlerc = fnamemodify(resolve(expand('$HOME/.vimrc')), ':h') . "/vundlerc.vim"
 exec "source " . vundlerc
 
 " change the mapleader from \ to ,
