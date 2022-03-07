@@ -1,0 +1,10 @@
+{
+    "languageserver": {
+        "cairo": {
+            "module": "~/Projects/sidehustle/cairo-ls/node_modules/cairo-ls/out/server.js",
+            "args": ["--node-ipc"],
+            "filetypes": ["cairo"],
+            "rootPatterns": [".git/"]
+       }
+    }
+}
