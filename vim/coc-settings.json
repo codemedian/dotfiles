@@ -1,10 +1,10 @@
 {
     "languageserver": {
         "cairo": {
-            "module": "~/Projects/sidehustle/cairo-ls/node_modules/cairo-ls/out/server.js",
-            "args": ["--node-ipc"],
-            "filetypes": ["cairo"],
-            "rootPatterns": [".git/", "hardhat.config.ts"]
+            "command": "~/Projects/sidehustle/cairo/target/release/cairo-language-server",
+            "rootPatterns": [".git/", "hardhat.config.ts"],
+            "trace.server": "verbose",
+            "filetypes": ["cairo"]
        }
     }
 }

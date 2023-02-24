@@ -131,6 +131,9 @@ nmap ga <Plug>(EasyAlign)
 let g:tagbar_compact = 1
 nnoremap <leader>l :TagbarToggle<CR>
 
+" CTRL-P
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
 "" Man
 runtime ftplugin/man.vim
 nnoremap K :Man <cword><CR>

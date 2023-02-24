@@ -10,7 +10,6 @@ call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'junegunn/vim-easy-align'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -32,8 +31,8 @@ Plug 'morhetz/gruvbox'
 Plug 'ryanoasis/vim-devicons'
 
 " ######## L A N G U A G E S ########
-Plug 'codemedian/cairo.vim'
 Plug 'TovarishFin/vim-solidity'
+Plug 'codemedian/cairo.vim'
 
 " ######## T M U X - I N T E G R A T I O N ########
 Plug 'christoomey/vim-tmux-navigator'
