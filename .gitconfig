@@ -1,0 +1,8 @@
+[user]
+	name = Christoph Sitter
+	email = codemedian@gmail.com
+[format]
+	pretty = %C(auto,yellow)%h %C(auto,magenta)%>(18)%ad %C(auto,green)%<(8,trunc)%aN%C(auto,reset)%s %C(auto,red)%d%C(auto,reset)
+
+[log]
+	date = format-local:%Y-%m-%d %H:%M:%S
