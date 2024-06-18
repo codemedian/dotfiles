@@ -1,8 +1,32 @@
+
+# Add homebrew completions to FPATH for command completions before enabling them
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+fi
+
+# Enable bash command completion
+autoload -Uz compinit && compinit
+
+# Enable Cx-e edition of current terminal line
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^xe' edit-command-line
+bindkey '^x^e' edit-command-line
+
+# Make 'Alt + ←' and 'ALT + →' jump words in terminal
+bindkey '^[b' backward-word
+bindkey '^[f' forward-word
+
+
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias ls='ls -G'
 alias ll='ls -la'
 
 setopt PROMPT_SUBST # Needed to get the git prompt working
+
+bindkey '^R' history-incremental-search-backward
+
 
 # Load version control information
 autoload -Uz vcs_info
@@ -26,3 +50,4 @@ zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
 }
 
 PROMPT='%(?..%F{167}%?%f )%B%F{237}%~%f%b${vcs_info_msg_0_} %B%(!.#.%#)%b '
+

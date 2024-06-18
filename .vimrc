@@ -12,14 +12,16 @@ exec "source " . cocrc
 let mapleader  = ","
 
 syntax on
+" Use new regular expression engine
+set re=0
 
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 ""
 
-set hidden
-set switchbuf=useopen     " reveal already opened files from quickfix buf rather than opening new buffers
+set hidden        " hide a buffer with unsaved changes when a new one is opened, access with :ls
+set switchbuf=useopen  " reveal already opened files from quickfix buf rather than opening new buffers
 set nowrap        " don't wrap lines
 set tabstop    =4 " a tab is four spaces
 set expandtab
@@ -39,18 +41,14 @@ set wildignore =*.swp,*.o,*.a,*.so
 set title         " change the terminals title
 set visualbell    " don't beep
 set noerrorbells  " don't beep
-set lazyredraw
-set ttyfast
 set backspace=indent,eol,start  " make backspace behave normally
 
 
-set showcmd
 set wildmenu
 set wildmode   =list:longest
-set cursorline
+set cursorline   " highlight the line of the cursor
 " set mouse=a
 set laststatus=2
-set grepprg=ack
 set spelllang=en_gb
 
 if v:version >= 703
