@@ -23,13 +23,43 @@ local plugins = {
   },
 
   -- ===============================
+  -- Tmux/Vim Navigation
+  -- ===============================
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
+
+  -- ===============================
+  -- Comments
+  -- ===============================
+  {
+    "numToStr/Comment.nvim",
+    lazy = false,
+    config = function()
+      require("Comment").setup()
+    end,
+  },
+
+  -- ===============================
   -- File tree
   -- ===============================
   {
     "nvim-tree/nvim-tree.lua",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     cmd = { "NvimTreeToggle", "NvimTreeFocus" },
-    config = true,
+    config = function()
+      require("nvim-tree").setup({
+        view = {
+          width = 30,
+        },
+        actions = {
+          open_file = {
+            quit_on_open = false,
+          },
+        },
+      })
+    end,
   },
 
   -- ===============================

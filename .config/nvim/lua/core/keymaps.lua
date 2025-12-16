@@ -39,3 +39,22 @@ map("n", "<leader>fh", "<cmd>Telescope help_tags<CR>")
 -- =====================
 map("n", "<leader>n", "<cmd>NvimTreeToggle<CR>")
 
+-- =====================
+-- Config save and reload
+-- =====================
+map("n", "<leader>ev", "<C-w><C-v><C-l>:e $MYVIMRC<CR>", opts)
+map("n", "<leader>sv", function()
+  vim.cmd("source $MYVIMRC")
+  print("Config reloaded!")
+end, opts)
+
+-- =====================
+-- Comments (nerdcommenter-style)
+-- =====================
+map("n", "<leader>cc", "gcc", { remap = true })
+map("v", "<leader>cc", "gc", { remap = true })
+map("n", "<leader>cu", "gcc", { remap = true })
+map("v", "<leader>cu", "gc", { remap = true })
+map("n", "<leader>c<space>", "gcc", { remap = true })
+map("v", "<leader>c<space>", "gc", { remap = true })
+
