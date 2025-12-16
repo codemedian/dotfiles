@@ -1,11 +1,11 @@
 set nocompatible
 
 " figure out absolute path to vundlerc.vim and source it
-let vimplugrc = fnamemodify(resolve(expand('$HOME/.vimrc')), ':h') . "/.vim/vimplugrc.vim"
+let vimplugrc = fnamemodify(resolve(expand('$HOME/.config/vim/vimrc')), ':h') . "/vimplugrc.vim"
 exec "source " . vimplugrc
 
 " load COC plugin config from file
-let cocrc = fnamemodify(resolve(expand('$HOME/.vimrc')), ':h') . "/.vim/cocrc.vim"
+let cocrc = fnamemodify(resolve(expand('$HOME/.config/vim/vimrc')), ':h') . "/cocrc.vim"
 exec "source " . cocrc
 
 " change the mapleader from \ to ,

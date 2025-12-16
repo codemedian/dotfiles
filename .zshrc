@@ -22,6 +22,7 @@ bindkey '^[f' forward-word
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias ls='ls -G'
 alias ll='ls -la'
+alias vim="vim -u $HOME/.config/vim/vimrc"
 
 setopt PROMPT_SUBST # Needed to get the git prompt working
 
@@ -54,3 +55,7 @@ PROMPT='%(?..%F{167}%?%f )%B%F{237}%~%f%b${vcs_info_msg_0_} %B%(!.#.%#)%b '
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# Added by Antigravity
+export PATH="/Users/chris/.antigravity/antigravity/bin:$PATH"
