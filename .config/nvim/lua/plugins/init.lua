@@ -31,6 +31,16 @@ local plugins = {
   },
 
   -- ===============================
+  -- Git Fugitive
+  -- ===============================
+  {
+    "tpope/vim-fugitive",
+    cmd = { "G", "Git", "Gdiffsplit", "Gread", "Gwrite", "Ggrep", "GMove", "GDelete", "GBrowse" },
+    -- Alternatively, load on specific events:
+    -- event = "BufWinEnter",
+  },
+
+  -- ===============================
   -- Comments
   -- ===============================
   {
@@ -42,6 +52,14 @@ local plugins = {
   },
 
   -- ===============================
+  -- File icons
+  -- ===============================
+  {
+    "nvim-tree/nvim-web-devicons",
+    config = true,
+  },
+
+  -- ===============================
   -- File tree
   -- ===============================
   {
@@ -50,6 +68,16 @@ local plugins = {
     cmd = { "NvimTreeToggle", "NvimTreeFocus" },
     config = function()
       require("nvim-tree").setup({
+        renderer = {
+          icons = {
+            show = {
+              file = true,
+              folder = true,
+              folder_arrow = true,
+              git = true,
+            },
+          },
+        },
         view = {
           width = 30,
         },
@@ -107,6 +135,15 @@ local plugins = {
               cmd = { "pyright-langserver", "--stdio" },
               filetypes = { "python" },
               root_markers = { "pyproject.toml", "setup.py", "requirements.txt", ".git" },
+              settings = {
+                  python = {
+                      analysis = {
+                          autoSearchPaths = true,
+                          useLibraryCodeForTypes = true,
+                          diagnosticMode = "workspace",
+                      },
+                  },
+              },
           },
           ts_ls = {
               cmd = { "typescript-language-server", "--stdio" },
@@ -222,6 +259,28 @@ local plugins = {
       })
     end,
   },
+  
+
+  -- ===============================
+  -- Auto color-theme switching
+  -- ===============================
+ {
+  "cormacrelf/dark-notify",
+  config = function()
+    require('dark_notify').run({
+      schemes = {
+        dark = {
+          colorscheme = "gruvbox",
+          background = "dark",
+        },
+        light = {
+          colorscheme = "gruvbox",
+          background = "light",
+        }
+      }
+    })
+  end
+  }
 
 }
 

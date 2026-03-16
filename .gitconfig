@@ -6,3 +6,18 @@
 
 [log]
 	date = format-local:%Y-%m-%d %H:%M:%S
+[diff]
+    tool = nvimdiff
+[difftool "nvimdiff"]
+    cmd = nvim -d "$LOCAL" "$REMOTE"
+[merge]
+    tool = nvimdiff
+[mergetool]
+    prompt = false
+    keepBackup = false
+[mergetool "nvimdiff"]
+    layout = "LOCAL,BASE,REMOTE / MERGED"
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
