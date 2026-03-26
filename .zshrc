@@ -88,19 +88,3 @@ PROMPT='%(?..%F{167}%?%f )%B%F{241}%~%f%b${vcs_info_msg_0_} %B%(!.#.%#)%b '
 
 # Added by Antigravity
 export PATH="/Users/chris/.antigravity/antigravity/bin:$PATH"
-
-# OpenClaw Completion
-source "/Users/chris/.openclaw/completions/openclaw.zsh"
-
-
-
-
-function openclaw-start {
-    launchctl enable gui/$(id -u)/ai.openclaw.gateway
-    launchctl load ~/Library/LaunchAgents/ai.openclaw.gateway.plist
-}
-
-function openclaw-stop {
-    launchctl unload ~/Library/LaunchAgents/ai.openclaw.gateway.plist
-    launchctl disable gui/$(id -u)/ai.openclaw.gateway
-}
