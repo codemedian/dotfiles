@@ -1,0 +1,29 @@
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor/Vim files
+*.swp
+*.swo
+.netrwhist
+undo/
+.vim/.undo/
+
+# Zsh artifacts
+.zcompdump*
+.zsh_sessions/
+.zsh_history
+
+# Local/Private configs (template only)
+.env
+.env.local
+*.local.zsh
+**/plugged/
+**/lazy/
+**/node_modules/
+**/target/
