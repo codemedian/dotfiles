@@ -2,6 +2,7 @@
 
 # Ensure ~/.config exists
 mkdir -p "$HOME/.config"
+mkdir -p "$HOME/Library/LaunchAgents"
 
 # Get the directory of this script
 DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
