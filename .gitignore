@@ -13,6 +13,7 @@ Icon?
 .netrwhist
 undo/
 .vim/.undo/
+.idea
 
 # Zsh artifacts
 .zcompdump*
