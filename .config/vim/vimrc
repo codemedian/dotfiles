@@ -43,6 +43,13 @@ set visualbell    " don't beep
 set noerrorbells  " don't beep
 set backspace=indent,eol,start  " make backspace behave normally
 
+" Handle focus events in tmux
+if &term =~# '^screen' || &term =~# '^tmux'
+  let &t_fe = "\<Esc>[?1004h"
+  let &t_fd = "\<Esc>[?1004l"
+  execute "set <FocusGained>=\<Esc>[I"
+  execute "set <FocusLost>=\<Esc>[O"
+endif
 
 set wildmenu
 set wildmode   =list:longest
@@ -136,17 +143,37 @@ au BufRead,BufNewFile *.gradle setfiletype groovy
 
 
 "" ######## C O L O R S C H E M E S ######## "
+"" Sync system theme
+function! SyncBackground()
+    let l:new_bg = 'light'
+    if system("defaults read -g AppleInterfaceStyle 2>/dev/null") =~ 'Dark'
+        let l:new_bg = 'dark'
+    endif
+    
+    if &background != l:new_bg
+        let &background = l:new_bg
+        
+        " Re-apply colorscheme so all highlights update
+        execute 'colorscheme gruvbox'
+        
+        " Refresh Airline if it is loaded
+        if exists(':AirlineRefresh')
+            execute 'AirlineRefresh'
+        endif
+    endif
+endfunction
+
 if &diff
     color github
     "" diff mode
     set diffopt+=iwhite
 else
-    if system("defaults read -g AppleInterfaceStyle 2>/dev/null") =~ 'Dark'
-        set background=dark
-    else
-        set background=light
-    endif
+    call SyncBackground()
     colorscheme gruvbox
-    "hi Normal ctermbg=None
+    
+    " Sync on focus gained, buffer enter, and tab enter
+    if has("autocmd")
+        autocmd FocusGained,BufEnter,TabEnter * call SyncBackground()
+    endif
 endif
 

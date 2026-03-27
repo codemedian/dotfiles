@@ -37,6 +37,7 @@ Plug 'ryanoasis/vim-devicons'
 " ######## T M U X - I N T E G R A T I O N ########
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'benmills/vimux'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 
 Plug 'scrooloose/nerdtree'
 
