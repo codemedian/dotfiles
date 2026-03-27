@@ -6,13 +6,12 @@
     <string>com.user.terminal-theme-sync</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/chris/.config/macos-theme-sync/sync.sh</string>
-    </array>
-    <key>WatchPaths</key>
-    <array>
-        <string>/Users/chris/Library/Preferences/.GlobalPreferences.plist</string>
+        <string>/usr/bin/swift</string>
+        <string>/Users/chris/.config/macos-theme-sync/listener.swift</string>
     </array>
     <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
     <true/>
 </dict>
 </plist>

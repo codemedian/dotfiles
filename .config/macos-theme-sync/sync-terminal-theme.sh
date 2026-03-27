@@ -4,14 +4,9 @@
 
 # Get current system appearance
 MODE=$(defaults read -g AppleInterfaceStyle 2>/dev/null || echo "Light")
-STATE_FILE="/tmp/terminal_theme_last_mode"
-LAST_MODE=$(cat "$STATE_FILE" 2>/dev/null)
 
 # If the mode hasn't changed, nothing to do
 [[ "$MODE" == "$LAST_MODE" ]] && exit 0
-
-# Record the new state
-echo "$MODE" > "$STATE_FILE"
 
 # Determine the theme to apply
 THEME="gruvbox-light"
