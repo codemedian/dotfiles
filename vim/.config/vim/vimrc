@@ -146,34 +146,44 @@ au BufRead,BufNewFile *.gradle setfiletype groovy
 "" Sync system theme
 function! SyncBackground()
     let l:new_bg = 'light'
-    if system("defaults read -g AppleInterfaceStyle 2>/dev/null") =~ 'Dark'
-        let l:new_bg = 'dark'
+    let l:state_file = expand('~/.config/macos-theme-sync/theme_state')
+    
+    if filereadable(l:state_file)
+        let l:mode = readfile(l:state_file)[0]
+        let l:new_bg = (l:mode =~# 'Dark' ? 'dark' : 'light')
+    else
+        " Fallback to system command if state file missing
+        if system("defaults read -g AppleInterfaceStyle 2>/dev/null") =~ 'Dark'
+            let l:new_bg = 'dark'
+        endif
     endif
     
     if &background != l:new_bg
         let &background = l:new_bg
         
-        " Re-apply colorscheme so all highlights update
-        execute 'colorscheme gruvbox'
+        " Re-apply colorscheme silently
+        silent! execute 'colorscheme gruvbox'
         
         " Refresh Airline if it is loaded
         if exists(':AirlineRefresh')
-            execute 'AirlineRefresh'
+            silent! execute 'AirlineRefresh'
         endif
+        
+        " Force a redraw to clear any artifacts
+        redraw!
     endif
 endfunction
 
 if &diff
     color github
-    "" diff mode
     set diffopt+=iwhite
 else
     call SyncBackground()
     colorscheme gruvbox
     
-    " Sync on focus gained, buffer enter, and tab enter
+    " Sync on focus gained and buffer entry
     if has("autocmd")
-        autocmd FocusGained,BufEnter,TabEnter * call SyncBackground()
+        autocmd BufEnter,FocusGained * call SyncBackground()
     endif
 endif
 

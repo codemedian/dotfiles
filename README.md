@@ -42,9 +42,12 @@ The script will:
 ## 🌓 macOS Theme Sync
 
 The `macos-theme-sync` package provides:
-- A **Swift listener** that osservas OS-level theme changes reactively.
-- A **Shell script** that updates the Terminal app's default and current settings.
-- Integration with **Tmux**, **Vim**, and **Neovim** to trigger theme refreshes in open editors.
+- A **Swift listener** (`listener.swift`) that observes OS-level theme changes reactively via `DistributedNotificationCenter`.
+- A **Shell script** (`sync.sh`) that:
+    - Updates Terminal.app settings.
+    - Synchronizes **Tmux** themes instantly.
+    - Writes a state file for **Neovim** to watch via `vim.uv.new_fs_event` for seamless background refreshes.
+    - Signals **Vim** instances to update their background instantly using `SIGUSR1`.
 
 ## 🛠️ Maintenance
 

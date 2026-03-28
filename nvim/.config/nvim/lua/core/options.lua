@@ -1,4 +1,21 @@
+-- Determine initial theme state
+local state_file = vim.fn.expand("~/.config/macos-theme-sync/theme_state")
+local f = io.open(state_file, "r")
+local mode = ""
+if f then
+  mode = f:read("*a"):gsub("%s+", "")
+  f:close()
+else
+  -- Fallback to defaults read if state file doesn't exist yet
+  mode = vim.fn.system("defaults read -g AppleInterfaceStyle 2>/dev/null"):gsub("%s+", "")
+end
+vim.opt.background = (mode:match("Dark") and "dark" or "light")
+
 local opt = vim.opt
+
+-- Quiet the UI
+opt.shortmess:append("IsWcCF") -- I: no intro, s: no search count, W: no write messages, c: no completion messages, C: no scan messages, F: no hit-enter for messages
+opt.cmdheight = 1 -- Ensure there is enough space for messages
 
 -- Encoding
 opt.encoding = "utf-8"
