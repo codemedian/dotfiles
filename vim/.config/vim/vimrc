@@ -143,6 +143,12 @@ au BufRead,BufNewFile *.gradle setfiletype groovy
 
 
 "" ######## C O L O R S C H E M E S ######## "
+" Enable true color support
+set termguicolors
+
+" Gruvbox settings
+let g:airline_theme = 'gruvbox'
+
 "" Sync system theme
 function! SyncBackground()
     let l:new_bg = 'light'

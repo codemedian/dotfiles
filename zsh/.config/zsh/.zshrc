@@ -31,6 +31,7 @@ alias ls='ls -G'
 alias ll='ls -la'
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias vim='vim -u $HOME/.config/vim/vimrc'
+alias vi='vim'
 
 # vcs_info setup for git prompt
 autoload -Uz vcs_info
