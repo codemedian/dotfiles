@@ -1,0 +1,20 @@
+# Files to ignore when stowing
+.DS_Store
+README.md
+LICENSE
+install.sh
+.git
+.gitignore
+.idea
+.stowrc
+.stow-local-ignore
+# Transient Zsh files
+.zsh_history
+.zcompdump*
+.zcompcache
+.zsh_sessions
+# Transient macOS sync files
+sync.log
+listener.log
+theme_state
+terminal-theme-switcher

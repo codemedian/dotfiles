@@ -69,7 +69,7 @@ opt.listchars = {
 
 -- Misc
 opt.mouse = "a"
-opt.clipboard = "unnamedplus"
+--opt.clipboard = "unnamedplus" --  add this to make yank/delete automatically go to system clipboard
 opt.spelllang = "en_gb"
 opt.scrolloff = 5
 

@@ -1,0 +1,11 @@
+# .stowrc
+--target=/Users/chris
+--dir=/Users/chris/Projects/dotfiles
+--dotfiles
+--ignore=.DS_Store
+--ignore=README.md
+--ignore=LICENSE
+--ignore=install.sh
+--ignore=.git
+--ignore=.gitignore
+--ignore=.idea

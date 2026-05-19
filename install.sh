@@ -20,7 +20,8 @@ packages=(
 # Stow each package
 for pkg in "${packages[@]}"; do
     echo "Stowing $pkg..."
-    stow -R -d "$DOTFILES_DIR" -t "$HOME" "$pkg"
+    # --dotfiles flag handles dot-X -> .X transformation
+    stow -R --dotfiles "$pkg"
 done
 
 # Post-stow installation

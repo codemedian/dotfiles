@@ -6,12 +6,15 @@
     <string>com.user.terminal-theme-sync</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/usr/bin/swift</string>
-        <string>/Users/chris/.config/macos-theme-sync/listener.swift</string>
+        <string>/Users/chris/.local/bin/terminal-theme-switcher</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
     <key>KeepAlive</key>
     <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/chris/.config/macos-theme-sync/listener.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/chris/.config/macos-theme-sync/listener.log</string>
 </dict>
 </plist>
