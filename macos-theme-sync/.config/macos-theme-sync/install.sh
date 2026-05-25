@@ -13,9 +13,13 @@ if [[ ! -f "$DEST_PLIST" ]]; then
 fi
 
 # 0. Patch the Plist with the current HOME path (launchd requires absolute paths)
-# We do this on the stowed file in ~/Library/LaunchAgents
+# We use a temporary file to avoid 'sed -i' breaking the GNU Stow symlink.
+# Redirection (>) follows symlinks and updates the source file in the dotfiles repo.
 echo "🔧 Patching Plist with absolute paths..."
-sed -i '' "s|/Users/[^/]*|$HOME|g" "$DEST_PLIST"
+TMP_PLIST=$(mktemp)
+sed "s|/Users/[^/]*|$HOME|g" "$DEST_PLIST" > "$TMP_PLIST"
+cat "$TMP_PLIST" > "$DEST_PLIST"
+rm "$TMP_PLIST"
 
 # 1. Compile the Swift listener into a binary
 # We put it in ~/.local/bin so it doesn't clutter the stowed config directory

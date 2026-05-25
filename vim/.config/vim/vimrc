@@ -190,6 +190,10 @@ else
     " Sync on focus gained and buffer entry
     if has("autocmd")
         autocmd BufEnter,FocusGained * call SyncBackground()
+        " Only register signal if the vim version supports it
+        if exists("##Signal")
+            autocmd Signal SIGUSR1 call SyncBackground()
+        endif
     endif
 endif
 

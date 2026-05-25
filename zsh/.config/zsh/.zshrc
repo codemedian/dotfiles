@@ -57,6 +57,13 @@ precmd() { vcs_info }
 PROMPT='%(?..%F{167}%?%f )%B%F{241}%~%f%b${vcs_info_msg_0_} %B%(!.#.%#)%b '
 
 # --- macOS Theme Sync Integration ---
+# Ensure the background listener agent is loaded and running
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    if ! launchctl list | grep -q com.user.terminal-theme-sync; then
+        launchctl load "$HOME/Library/LaunchAgents/com.user.terminal-theme-sync.plist" 2>/dev/null
+    fi
+fi
+
 # Sync the theme once on shell startup.
 # The LaunchAgent handles theme changes for existing windows.
 if [ -x "$HOME/.config/macos-theme-sync/sync.sh" ]; then

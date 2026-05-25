@@ -1,5 +1,9 @@
 #!/bin/zsh
 # Synchronize macOS Terminal theme with system appearance.
+
+# Ensure Homebrew and local bins are in PATH for launchd background execution
+export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/.local/bin:$PATH"
+
 # Get current system appearance
 MODE=$(defaults read -g AppleInterfaceStyle 2>/dev/null || echo "Light")
 
@@ -22,9 +26,10 @@ end tell"
 # If inside tmux or tmux is running, update tmux theme
 if command -v tmux >/dev/null 2>&1 && tmux ls >/dev/null 2>&1; then
     tmux source-file "$HOME/.config/tmux/${THEME}.conf" 2>/dev/null
+    tmux refresh-client 2>/dev/null
 fi
 
-# Signal all Vim instances to refresh background (using SIGUSR1)
-# Neovim instances are already watching the 'theme_state' file
+# Signal all Vim/Neovim instances to refresh background (using SIGUSR1)
 pkill -USR1 -x vim 2>/dev/null || true
+pkill -USR1 -x nvim 2>/dev/null || true
 
